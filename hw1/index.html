@@ -32,16 +32,11 @@
 
 		<br>
 
-		Link to webpage: (TODO) <a href="https://cs184.eecs.berkeley.edu/sp25">cs184.eecs.berkeley.edu/sp25</a>
+		Link to webpage: <a href="https://cal-cs184-student.github.io/hw-webpages-MarioIshac/hw1/index.html">cal-cs184-student.github.io/hw-webpages-MarioIshac/hw1/index.html</a>
 
 		<br>
 
-		Link to GitHub repository: (TODO) <a href="https://cs184.eecs.berkeley.edu/sp25">cs184.eecs.berkeley.edu/sp25</a>
-
-		<figure>
-			<img src="lion.jpg" alt="Lion" style="width:50%"/>
-			<figcaption>You can add images with captions!</figcaption>
-		</figure>
+		Link to GitHub repository: <a href="https://github.com/cal-cs184-student/hw1-rasterizer-mario-ishac">cal-cs184-student/hw1-rasterizer-mario-ishac</a>
 
 		<!--
 		We've already added one heading per task, to make your write-up as navigable when grading. Please fit your write-up within these sections!
@@ -126,7 +121,7 @@ In this assignment, I implemented full triangle rasterization pipeline capable o
 
 		<p>Pixel sampling is the process of determining what color a screen pixel should take from a texture image. Since texture coordinates (<code>u, v</code>) are continuous but textures are stored as discrete texels, we need a method to convert a given <code>(u, v)</code> into a color value.</p>
 
-        <p>In my implementation, I first computed <code>(u, v)</code> at each sample using barycentric interpolation of the triangle’s vertex UVs. I then scaled these coordinates by the texture’s width and height to move into texture space. From there, I evaluated the color using one of two pixel sampling methods:</p>
+        <p>In my implementation, I first computed <code>(u, v)</code> at each sample using barycentric interpolation of the triangle's vertex UVs. I then scaled these coordinates by the texture's width and height to move into texture space. From there, I evaluated the color using one of two pixel sampling methods:</p>
 
         <ul>
             <li><strong>Nearest Neighbor:</strong> Chooses the single texel closest to the <code>(u, v)</code> coordinate. This is fast but produces blocky results when textures are magnified.</li>
